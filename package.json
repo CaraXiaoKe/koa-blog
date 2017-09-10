@@ -1,0 +1,22 @@
+{
+  "name": "koa-blog",
+  "version": "2.0.0",
+  "description": "koa-blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaraXiaoKe/koa-blog.git"
+  },
+  "author": "CaraXiaoKe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaraXiaoKe/koa-blog/issues"
+  },
+  "homepage": "https://github.com/CaraXiaoKe/koa-blog#readme",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
