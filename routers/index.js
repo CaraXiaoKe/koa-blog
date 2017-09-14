@@ -2,14 +2,10 @@ const Router = require('koa-router');
 
 let home = new Router();
 home.get('/', async ( ctx )=>{
-	let html = `
-		<ul>
-	      	<li><a href="/page/helloworld">/page/helloworld1111</a></li>
-	      	<li><a href="/page/404">/page/404</a></li>
-	      	<img src="/images/single2.png"/>
-	    </ul>
-	`;
-	ctx.body = html;
+	let title = 'hello koa2'
+  	await ctx.render('index', {
+    	title,
+  	})
 });
 
 let page = new Router();

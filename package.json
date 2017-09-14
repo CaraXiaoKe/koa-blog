@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/CaraXiaoKe/koa-blog#readme",
   "dependencies": {
+    "ejs": "^2.5.7",
     "koa": "^2.3.0",
     "koa-bodyparser": "^3.2.0",
     "koa-router": "^7.2.1",
-    "koa-static": "^4.0.1"
+    "koa-static": "^4.0.1",
+    "koa-views": "^6.0.2"
   }
 }
