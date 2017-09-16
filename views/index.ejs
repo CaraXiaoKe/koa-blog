@@ -6,12 +6,57 @@
 		<meta name="renderer" content="webkit">
 		<meta name="keywords" content="前端">
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-		<style>
-		</style>
+		<link rel="stylesheet" href="/styles/layout.css">
 	</head>
 	<body>
-		<div>
-			<%= title %>
+		<div class="g">
+			<nav class="m-nav">
+			</nav>
+			<div class="g-con" id="scroll">
+				<div class="relative">
+					<div class="m-con">
+						<div class="wrap">
+							<% posts.forEach(function(post){ %>
+								<article class="u-art">
+									<header class="tc">
+										<p class="author">2017-10-22 杜培东</p>
+										<h2 class="title"><%= post.title %></h2>
+									</header>
+									<img class="img-fit img-auto loc" src="http://upload-images.jianshu.io/upload_images/2041831-3b8b3801cfde93e4.jpg">
+									<p class="abs"><%= post.content %></p>
+									<div class="btn__wrapper">
+										<a class="btn--black" href="javascript:;">阅读更多</a>
+									</div>
+									<div class="meta clear">
+										<a class="left"><%= post.author %></a><a class="right">25</a>
+									</div>
+								</article>
+							<% }) %>
+						</div>
+					</div>
+					<aside class="m-side">
+						<div class="wrap">
+							<div>
+								<img class="avatar" src="http://img4.imgtn.bdimg.com/it/u=3257178761,106023809&fm=27&gp=0.jpg">
+								<p class="intro">他来自江湖，他不是一个人在战斗他来自江湖，他不是一个人在战斗他来自江湖，他不是一个人在战斗他来自江湖，他不是一个人在战斗</p>
+							</div>
+							<div class="label-wrap">
+								<h3 class="tc">标签</h3>
+								<div class="link-box clear">
+									<a class="link" href=="javascript:;">A股</a><a class="link" href=="javascript:;">A股</a><a class="link" href=="javascript:;">A股</a><a class="link" href=="javascript:;">A股</a><a class="link" href=="javascript:;">A股</a><a class="link" href=="javascript:;">A股</a><a class="link" href=="javascript:;">A股</a>
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
 		</div>
+		<script src="https://cdn.bootcss.com/iScroll/5.2.0/iscroll.min.js"></script>
+		<script>
+			var myScroll = new IScroll('#scroll',{
+				mouseWheel: true,
+    			// scrollbars: true
+			});
+		</script>
 	</body>
 </html>
